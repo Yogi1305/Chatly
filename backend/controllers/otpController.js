@@ -1,5 +1,8 @@
 import otpGenerator from 'otp-generator';
 import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+dotenv.config();
+
 
 // Generate the OTP
 
@@ -8,8 +11,8 @@ let otp1=null;
 const transporter = nodemailer.createTransport({
   service: 'gmail', // e.g., use 'gmail', 'hotmail', etc.
   auth: {
-    user: 'kushwahay535@gmail.com', // replace with your email
-    pass: 'kyjl czxm vfgg zmct'    // replace with your email password
+    user: process.env.emailsend, //  your email
+    pass: process.env.pass    // your email passkey
   }
 });
 
