@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 body{
-    background:url(../public/bg.avif);
+    background:url(../public/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+   
+    /* background-position: center; */
 
 }
 ::-webkit-scrollbar {
