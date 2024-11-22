@@ -137,7 +137,7 @@ const PasswordReset = () => {
                 type="password"
               />
             </div>
-            <button type="submit" className="btn">
+            <button type="submit" className="btn btn-sm btn-secondary my-2">
               Update Password
             </button>
           </form>

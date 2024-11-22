@@ -35,7 +35,7 @@ app.use("/api/v1/user",userRoute);
 
 app.use("/api/v1/message/",messageRoute);
 app.use("/api/v1/otp",otpRoute);
-app.use("/api/v1",passwordRoute);
+app.use("/api/v1/password",passwordRoute);
 
 
 
