@@ -8,6 +8,7 @@ import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import { app,server } from "./socket/socket.js";
+import passwordRoute from './routes/passwordRoute.js';
 
 // if your using import then always uses fileformat;
 
@@ -34,6 +35,7 @@ app.use("/api/v1/user",userRoute);
 
 app.use("/api/v1/message/",messageRoute);
 app.use("/api/v1/otp",otpRoute);
+app.use("/api/v1",passwordRoute);
 
 
 
