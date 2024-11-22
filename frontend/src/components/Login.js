@@ -80,6 +80,7 @@ const Login = () => {
           <Link to="/emailVerification" className="hover:text-red-600 hover:underline mx-2">
             Don't have an account?
           </Link>
+          <Link to="/passwordreset" className='ml-2 hover:underline hover:text-red-500'>Forget Password</Link>
           <div>
             <button className="mt-1 btn btn-block btn-sm btn-primary" type="submit">
               Login
