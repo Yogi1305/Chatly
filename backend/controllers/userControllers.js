@@ -22,7 +22,8 @@ export const register = async (req, res) => {
         .json({ message: "password doesnot match with confirm password " });
     }
     // validate email
-    const regex = /^[a-zA-Z]+\.(22[2-7][0-9][0-9])@knit\.ac\.in$/;
+    const regex = /^[a-zA-Z]+\.\d{5}@knit\.ac\.in$|^[a-zA-Z]+\d*@gmail\.com$/
+
     // return regex.test(email);
     if (!regex.test(email)) {
       return res
