@@ -127,16 +127,16 @@ const Signup = () => {
               checked={User.gender === "boy"}
               onChange={() => handleCheckbox("boy")}
              
-              className="checkbox mx-2" />
+              className="checkbox mx-2 border-white" />
             </div>
             <div className="flex items-center">
               <p>Female</p>
               <input type="checkbox" 
-              
+               
               checked={User.gender === "girl"}
               onChange={() => handleCheckbox("girl")}
               
-              className="checkbox mx-2" />
+              className="checkbox mx-2 border-white" />
             </div>
           </div>
           <Link to="/login" className= "  hover:text-red-600 hover:underline mx-2">
